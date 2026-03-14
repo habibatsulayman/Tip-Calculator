@@ -1,94 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
 
-    <title>Frontend Mentor | Tip calculator app</title>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <div class="container">
-      <img src="/images/logo.svg" alt="logo" />
-      <div class="div">
-        <div class="box-1">
-          <form action="#">
-            <label for="bill">Bill</label> <br />
-            <i class="fa fa-usd" aria-hidden="true"></i>
-            <input class="bill-value" type="number" placeholder="0" required />
-          </form>
-          <label class="select" for="tip">Select Tip %</label> <br />
-          <div class="span-1">
-            <span class="h" id="first"> 5%</span>
-            <span class="h second"> 10%</span>
-            <span class="h third"> 15%</span>
-            <span class="h fourth"> 25%</span>
-            <span class="h fifth"> 50%</span>
-            <input type="text" class="custom" placeholder="Custom" />
-            <!-- <span class="custom"> Custom</span> -->
-          </div>
-
-          <form action="#">
-            <label for="People">Number of People</label> <br />
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input
-              type="number"
-              name="people"
-              class="number-of-people"
-              placeholder="0"
-              required
-            />
-          </form>
-        </div>
-
-        <div class="box-2">
-          <div class="amount">
-            <div>
-              <h3>Tip Amount</h3>
-              <p>/ person</p>
-            </div>
-            <div><span class="price price-1">$0.00</span></div>
-          </div>
-
-          <div class="total">
-            <div>
-              <h3>Total</h3>
-              <p>/ person</p>
-            </div>
-            <div><span class="price price-2">$0.00</span></div>
-          </div>
-          <button class="reset">RESET</button>
-        </div>
-      </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Habeebah</a>.
-    </div>
-
-    <script src="script.js"></script>
-    <script src="myscript.js"></script>
-  </body>
 </html>
